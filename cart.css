@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700&display=swap");
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+    font-weight: 500;
+}
+.container-cart{
+    display: flex;
+    margin: 10px 50px;
+    box-shadow: 0 0 3px rgb(0 0 0/ 30%);
+    padding: 0px 10px;
+    align-items: center;
+}
+.cart-left-header{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.cart-left-header img{
+   height: 20px;
+   margin-right: 15px;
+   margin-top: 10px;
+   cursor: pointer;
+}
+.cart-left-header h3 span{
+    font-size: 14px;
+}
+.container-cart .cart-left{
+    flex: 2;
+}
+.main-cart .list-product{
+    max-height: 500px;
+    overflow: auto;
+}
+check-box{
+    flex: 1;
+}
+.check-box div{
+    height: 20px;
+    width: 20px;
+    background-color: lightgray;
+    border-radius: 3px;
+    display: flex;
+    box-shadow: 0 0 3px rgb(0 0 0/20%);
+}
+.check-box i{
+    margin:auto;
+}
+.list-product li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border-bottom: 1px solid lightgray;
+}
+.list-product  li .thongtin{
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+.price{
+    flex: 3;
+}
+.list-product li .img-product{
+    flex: 2;
+}
+.list-product li .img-product div{
+    height: 100px;
+    width: 100px;
+}
+.img-product div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+li .thongtin span:first-child, .price{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+button{
+    border: none;
+    padding: 5px 10px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    float: right;
+    margin: 5px 5px 5px 0;
+    flex: 2;
+}
+.container-cart .cart-right{
+    flex: 1;
+    padding: 20px 50px;
+}
+.container-cart .cart-right .container-body{
+  box-shadow: 0 0 3px rgb(0 0 0/20%);
+   padding: 5px 20px;
+}
+.cart-right .container-body .item-bill{
+   display: flex;
+   justify-content: space-between;
+   margin: 20px 0;
+}
+.cart-right .container-body .item-bill:last-child{
+    border-top: 1px solid lightgray;
+    padding-top: 10px;
+    font-weight: 600;
+}
+.cart-right .container-body .item-bill:last-child .title, .price-bill{
+    font-weight: 700;
+}
+.checkout{
+    width: 100%;
+    margin: 10px 0 0 0;
+    border: none;
+    padding: 5px 30px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}

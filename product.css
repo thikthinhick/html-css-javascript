@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;200;300;400;500;600&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed"
+}
+.container{
+    display: flex;
+    margin: 10px 80px;
+}
+.container-left{
+    flex: 2;
+}
+.container-left .img-product{
+        width: 60vw;
+        height: calc(100vw * 1/3)
+}
+.img-product img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.container-left .product-name{
+    margin: 20px 0px;
+}
+.container-left .price-cart{
+    display: flex;
+    justify-content: space-between;
+}
+.price-cart .price{
+    font-size: 30px;
+    color: red;
+}
+.price-cart button{
+  border: none;
+  font-size: 16px;  
+  padding: 5px 10px;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0px;
+  margin: 5px 5px 5px 0;
+}
+.container-left .content{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.container-right{
+    flex: 1;
+    padding-left: 40px;
+}
+.container-right .header-user{
+    padding-bottom: 10px;
+}
+.container-right .user-sell .header-user{
+    display: flex;
+    justify-content: space-between;
+}
+.header-user .img-user{
+    display: flex;
+}
+.header-user .img-user .state{
+    position: relative;
+}
+.header-user .img-user .state::before{
+    content: "";
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    background-color: green;
+    border-radius: 7px;
+    left: -22px;
+    border: 1px solid #fff;
+    top: 12px;
+}
+.header-user .img-user .name-and-state{
+    margin-left: 10px;
+}
+.name-and-state span{
+    font-weight: 600;
+}
+.name-and-state .state{
+    font-size: 14px;
+}
+.header-user .personal-page{
+  border: none;
+  font-size: 16px;  
+  padding: 2px 10px;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0px;
+}
+.user-sell .footer-user{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+    padding: 5px 20px;
+}
+.footer-user .assess ul{
+    display: flex;
+}
+.footer-user .title,.footer-user .data{
+    text-align: center;
+}
+.footer-user .gachngang{
+    height: 20px;
+    width: 1px;
+    margin-top: 10px;
+    background-color: lightgray;
+}
+.container-right .main{
+    box-shadow: 0 0 3px rgb(0 0 0/20%);
+    padding: 10px;
+}
+.container-right .chat-user{
+  border: none;
+  font-size: 18px;  
+  padding: 5px 10px;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0px;
+  text-align: center;
+  margin-top: 10px;
+}
+.footer-user .assess ul li{
+    list-style: none;
+    color: yellow;
+}
+.share-app{
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+  }
+  .share-app ul{
+    display: flex;
+    list-style: none;
+    margin: auto;
+  }
+  .share-app ul li{
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgb(187, 187, 187);
+    display: flex;
+    border-radius: 20px;
+    margin: 0px 10px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+  }
+  .share-app ul li:hover{
+      background-color: #355c7d;
+  }
+  .share-app ul li i{
+    margin: auto;
+  }
+  .quangcao img{
+      width: 100%;
+      margin-top: 40px;
+  }
+  .location, .tinhtrang{
+      display:flex;
+      margin: 10px 0;
+      align-items: center;
+  }
+  .location i, .tinhtrang i{
+      margin-right: 10px;
+  }
+  .reviews{
+      width: 50vw;
+      margin-top: 40px
+  }
+.input-comment div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.input-comment div img{
+    height: 40px;
+}
+.input-comment div input{
+    font-size: 16px;
+    outline: none;
+    padding-bottom: 5px;
+    width: calc(100% - 50px);
+    font-weight: 300;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #d2d2d2;
+}
+.input-comment div:last-child{
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+.input-comment div:last-child .button-active{
+  border: none;
+  font-size: 16px;  
+  padding: 5px 10px;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0px;
+  text-align: center;
+}
+.input-comment div:last-child span:first-child{
+    margin-right: 20px;
+}
+.input-comment div:last-child span:last-child{
+  border: none;
+  font-size: 16px;  
+  padding: 5px 10px;
+  background-color: #d2d2d2;
+  color: #fff;
+  border-radius: 0px;
+  text-align: center;
+}
+.list-comment{
+    margin-top: 10px;
+}
+.list-comment-child{
+    border-left: 1px solid #d2d2d2;
+    padding-left: 10px;
+}
+.list-comment li{
+    list-style: none;
+}
+.item-comment{
+    display: flex;
+}
+.item-comment .img-user-comment img{
+    height: 40px;
+}
+.item-comment .body-comment{
+    margin-left: 10px;
+}
+.item-comment .body-comment .content{
+    background-color: #f2f3f5;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 10px;
+}
+.body-comment .body-comment .content div{
+    font-weight: 600;
+}
+.body-comment .content p{
+    font-weight: 300;
+}
+.body-comment .footer-comment{
+    margin-top: 10px;
+    font-weight: 300;
+}
+.body-comment .footer-comment span{
+    margin-right: 8px;
+}
+.body-comment .show-reply{
+    margin-top: 12px;
+}
+
+
+
+.container-body-2{
+    padding: 40px 80px;
+    width: 100%;
+}
+.container-body-2 h2{
+    font-size: 25px;
+    font-weight: 400;
+}
+.container-body-2 ul{
+    display: flex;
+    width: 100%; 
+    margin-top: 50px;   
+}
+.container-body-2 ul li{
+    width: 25%;
+    list-style: none;
+    font-weight: 200;
+    border-radius: 1px;
+    padding: 20px 0px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.container-body-2 ul li:hover{
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+}
+.container-body-2 ul li:hover > .item-product .add-bags{
+  display: flex;
+}
+.container-body-2 ul li:not(:last-child) {
+    margin-right: 40px
+}
+.item-product{
+  position: relative;
+}
+.item-product .add-bags{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 340px;
+  width: 100%;
+  display: none;
+}
+.item-product .add-bags div i{
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+  color: #fff;
+}.item-product .add-bags div{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: black;
+  margin: 0 30px;
+}
+.item-product .name-product{
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+.item-product .price{
+    font-size: 18px;
+    margin: 20px 0 0 15px;
+}
+.item-product .contact{
+    font-size: 13px;
+    font-weight: 100;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-top: 15px;
+}
+.contact .name .username, div .time, div .address {
+    font-weight: 400;
+}
+.item-product .img-product{
+    height: 400px;
+    display: flex;
+    margin: auto
+}
+.item-product .img-product img{
+    width: 100%;
+    object-fit: cover;
+}
+.container-body-2 .btn{
+    margin: auto;
+    background-color: transparent;
+    border: 2px solid #242222;
+    margin-top: 30px;
+    width: 200px;
+    text-align: center;
+    padding: 15px 0px;
+    cursor: pointer;
+}
+.container-body-2 .btn:hover{
+    color:#fff;
+    background-color: #242222;
+}
+
+
+
+
+.container-left .img-product{
+    width: 60vw;
+    height: calc(100vw * 1/3);
+     position: relative;
+   margin: auto;
+ }
+ .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   padding: 16px;
+   margin-top: -22px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+ }
+ .mySlides{
+   height: 100%;
+ }
+ .mySlides img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+ }
+ /* Position the "next button" to the right */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+ 
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover, .next:hover {
+   background-color: rgba(0,0,0,0.8);
+ }
+ 
+ /* Caption text */
+ .text {
+   color: #f2f2f2;
+   font-size: 15px;
+   padding: 8px 12px;
+   position: absolute;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;
+ }
+ 
+ /* Number text (1/3 etc) */
+ .numbertext {
+   color: #f2f2f2;
+   font-size: 16px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+ }
+ 
+ /* The dots/bullets/indicators */
+ .dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+ }
+ 
+ .active, .dot:hover {
+   background-color: #717171;
+ }
+ 
+ /* Fading animation */
+ .fade {
+   animation-name: fade;
+   animation-duration: 1.5s;
+   animation-timing-function: linear-gradient;
+ }
+ @keyframes fade {
+   from {opacity: .4} 
+   to {opacity: 1}
+ }
+ 

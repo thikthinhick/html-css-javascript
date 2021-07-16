@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Fira Sans';
+    font-family: 'Roboto';
     font-weight: 400;
 }
 section{
@@ -33,7 +33,7 @@ header{
     font-size: 14px;    
     height: 80px;
     box-shadow: 0 0 3px rgb(0 0 0 / 30%);
-}      
+}
 .header-menu ul{
     display: flex;
     padding-top: 10px;
@@ -56,6 +56,8 @@ header{
     transform-origin: left;
     transition: transform 0.3s ease-in-out;
 }
+
+
 .header-menu ul li:hover::after{
     transform: scale(1);
 }
@@ -63,9 +65,8 @@ header{
     display: flex;
     padding-top: 10px;
 }
-.header-tools div{
+.header-tools > div{
     margin: 0px 15px;
-    
 }
 .header-tools .bag-heart{
     position: relative;
@@ -90,12 +91,144 @@ header .menu-icon{
 header .menu-icon i{
     font-size: 20px;
 }
+/*giỏ hàng*/
+.header-tools .header-bag{
+  position: relative;
+}
+.header-bag .cart{
+  position: absolute;
+  right: -100%;
+  top: 120%;
+  z-index: 2;
+  width: 300px;
+  background-color: #fff;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+.header-bag .cart  h2{
+  background-color: black;
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+}
+.header-bag .cart .main-cart{
+  overflow-y: auto;
+  max-height: 350px;
+}
+.header-bag .cart li{
+  list-style: none;
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  padding: 2px 0px;
+  cursor: pointer;
+}
+.header-bag .cart li:hover{
+  background-color: lightgray;
+}
+.header-bag .cart .product-img{
+  flex:1;
+
+}
+.header-bag .cart .product-img .border-img{
+  height: 60px;
+  width: 80px;
+  padding: 5px;
+}
+.cart .product-img img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.header-bag .cart .cart-content{
+  flex:2;
+  margin-top: 5px;
+  padding-right: 5px;
+}
+.cart-content .product-price{
+  font-size: 16px;
+  font-weight: 500;
+}
+.cart button{
+  border: none;
+  padding: 5px 10px;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  float: right;
+  margin: 5px 5px 5px 0;
+}
+/*thong bao */
+.bell-notifi{
+  position: relative;
+}
+.bell-notifi .notification{
+  position: absolute;
+  width: 400px;
+  background-color: #fff;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.1);
+  right: -100%;
+  top: 120%;
+  z-index: 2;
+}
+.notification h2{
+  padding: 5px 0px;
+  border-bottom: 1px solid gray;
+  text-align: center;
+  background-color: black;
+  color: #fff;
+}
+.notification .main{
+  margin: 0px;
+  font-size: 13px;
+  overflow: auto;
+   max-height: 300px;
+}
+.notification .main li{
+  list-style: none;
+  display: flex;
+  padding: 10px 5px;
+}
+.notification .main li .icon-username{
+  flex: 1;
+  display: flex;
+}
+.icon-username img{
+  height: 40px;
+  border-radius: 20px;
+  padding-left:5px; 
+}
+.notification .main li .content{
+  flex: 6;
+  padding: 0 5px;
+}
+.notification .main li .content .timer{
+  font-size: 12px;
+  margin-top: 5px;
+  color: gray;
+}
+.notification .main li .content div{
+  margin-left: 10px;
+}
+.notification .main li .img-notifi{
+  flex: 2;
+  margin: 0px;
+}
+.notification .main li .img-notifi img{
+  width: 100%;
+  height: 50px;
+  object-fit: cover;
+}
+.notification .main li:hover{
+  background-color: rgb(0 0 0 / 30%);
+}
+/*thong bao */
 .container-body{
     margin: 20px 40px;
 }
 .container-body-1{
     display: flex; 
-    height: 5   00px;
+    height: 400px;
 }
 .container-body .list-topic{
     flex: 1;
